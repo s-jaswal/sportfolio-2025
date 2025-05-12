@@ -1,0 +1,727 @@
+body {}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rowdies', cursive;
+}
+
+/* short bio section css start */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: nowrap;
+    /* Prevent stacking unless screen is very small */
+}
+
+.info-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.info-text p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive tweak for small screens */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* short bio css section end*/
+
+.block p {
+    max-width: 600px;
+    /* Adjust the max-width as needed */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Adjust the margin between paragraphs */
+}
+
+h1 {
+    font-family: 'Rowdies', cursive;
+
+}
+
+h2 {
+    font-family: 'Rowdies', cursive;
+}
+
+h3 {
+    font-family: 'Rowdies', cursive;
+}
+
+h4 {
+    font-family: 'Rowdies', cursive;
+}
+
+p {
+    font-family: 'Rowdies', cursive;
+}
+
+strong {
+    font-family: 'Rowdies', cursive;
+}
+
+div {
+    font-family: 'Rowdies', cursive;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, white, gray);
+    /* Gradient from black to dark gray */
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+#container2 {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* Background color for the container */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+#container3 {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#container4 {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+#container .row {
+    /* Access rows */
+}
+
+#container .row .col {
+    float: left;
+    width: 50%;
+}
+
+/* Equivalent of #column-1*/
+#container .row .col.column-1 {}
+
+/* Equivalent of #column-2 */
+#container .row .col.column-2 {}
+
+/* centering the our story part */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust this according to your layout */
+}
+
+/* centering the our story part end */
+
+
+/* for the established in 2018 part */
+.highlight {
+    font-weight: bold;
+    font-size: 1.9em;
+    /* Adjust the size as needed */
+    margin-top: 80px;
+}
+
+/* for the established in 2018 part end */
+
+
+/* bigger text for our story info start */
+.bigger-text {
+    font-size: 1.6em;
+    /* Adjust the size as needed */
+    margin-top: 10px;
+}
+
+/* bigger text for our story info end */
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.column-1 {
+    flex: 1;
+    background-color: rgb(247, 179, 90);
+    /* Background color for the first column */
+    padding: 300px;
+    /* Add some padding for spacing */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    size: 100px;
+
+}
+
+.column-2 {
+    flex: 1;
+    background-color: rgb(102, 50, 50);
+    /* Background color for the second column */
+    padding: 300px;
+    /* Add some padding for spacing */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    /* Limits the image size to its container width */
+    height: auto;
+    /* Ensures the image keeps its aspect ratio */
+    display: block;
+    /* Ensures the image behaves like a block element */
+    /* Centers the image horizontally */
+    max-height: 100%;
+    /* Ensures the image does not exceed the container height */
+
+}
+
+/* Style for the contact us section */
+.section.footer {
+    background-color: black;
+    color: white;
+    padding: 200px 0;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* Style for the container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Style for the flexbox */
+.flexbox-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the gap between items */
+.gap-75>* {
+    margin-right: 75px;
+}
+
+/* Style for wrapping items */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Style for the footer menu wrappers */
+.footer-menu-wrapper_1,
+.footer-menu-wrapper_2,
+.footer-menu-wrapper_3,
+.footer-menu-wrapper_4 {
+    flex-basis: calc(25% - 75px);
+    /* 25% width with 75px gap */
+}
+
+/* Style for the contact us title */
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for the contact us links */
+.footer-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-link:hover {
+    color: orange;
+}
+
+
+/* nav bar styling */
+.navBar {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+i {
+    font-size: 20px;
+}
+
+i:hover,
+a:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.navBar nav li {
+    padding: 10px;
+    margin: 20px;
+    list-style-type: none;
+    display: inline-block;
+    color: black;
+}
+
+
+#hamMenu {
+    visibility: hidden;
+}
+
+/*Book and appointment styling start*/
+a {
+    color: black;
+    text-decoration: none
+}
+
+a:hover,
+a:focus {
+    color: orange;
+    text-decoration: underline
+}
+
+a:focus,
+.btn:focus {
+    outline: none;
+}
+
+.img-responsive {
+    border: 1px solid #ddd;
+}
+
+/*-----------------------
+----- Typo Styles ------
+-------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 300;
+}
+
+.big-text {
+    font-size: 58px;
+    font-weight: 300;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    word-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: -20px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+/*-----------------------
+----- Layout Styles -----
+-------------------------*/
+
+.add-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*-----------------------
+----- Color Styles ------
+-------------------------*/
+
+.bg-color1 {
+    color: #fff;
+    background: #509B9E;
+}
+
+.bg-color2 {
+    color: #fff;
+    background: orange;
+}
+
+.bg-color3 {
+    color: #fff;
+    background: #334959;
+}
+
+.border-bottom-color2 {
+    border-bottom: 7px solid orange;
+}
+
+.border-top-color2 {
+    border-top: 7px solid orange;
+}
+
+.color1 .service-icon,
+.color1.service-item ul li:nth-child(2):before {
+    background: #509B9E;
+}
+
+.color1 .service-icon:after {
+    border: 3px solid #509B9E;
+}
+
+.color2 .service-icon,
+.color2.service-item ul li:nth-child(2):before {
+    background: orange;
+}
+
+.color2 .service-icon:after {
+    border: 3px solid orange;
+}
+
+.color3 .service-icon,
+.color3.service-item ul li:nth-child(2):before {
+    background: #334959;
+}
+
+.color3 .service-icon:after {
+    border: 3px solid #334959;
+}
+
+/*------------------
+----- Buttons ------
+--------------------*/
+
+.btn-color1,
+.btn-color2 {
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    background: orange;
+    outline: none !important;
+    border-radius: 0;
+    transition: opacity .2s ease-out;
+}
+
+.btn-color1 {
+    background: #509B9E;
+}
+
+.btn-color1:hover,
+.btn-color2:hover {
+    color: black;
+    opacity: 0.9;
+    border-color: orange;
+}
+
+.btn-color1:focus,
+.btn-color1:active,
+.btn-color2:focus,
+.btn-color2:active {
+    color: #fff;
+}
+
+.btn-color1 .fa,
+.btn-color2 .fa {
+    margin-right: 15px;
+}
+
+#contact {
+    background-image: url('../images/bg-contact.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-color: white;
+}
+
+#contact-form .form-group label {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#contact-form.no-placeholder .form-group label {
+    display: block;
+}
+
+#contact-form .controls {
+    padding: 0;
+    margin-bottom: 30px;
+    border: 1px solid burlywood;
+    border-radius: 2px;
+}
+
+#contact-form .form-control {
+    background: transparent !important;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    height: 56px;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 100;
+    padding-left: 64px;
+    -webkit-transition: border-color .3s ease-out;
+    transition: border-color .3s ease-out;
+    border-radius: 2px;
+}
+
+#contact-form .form-group {
+    position: relative;
+}
+
+#contact-form .form-group [class*=fa] {
+    display: block;
+    width: 64px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #e5e5e5;
+    font-size: 24px;
+    line-height: 53px;
+    text-align: center;
+    font-weight: 300;
+    opacity: 0.5;
+    transition: opacity .2s ease-out;
+}
+
+#contact-form.no-placeholder .form-group [class*=fa] {
+    top: 30px;
+}
+
+#contact-form .form-control:focus+[class*=fa] {
+    opacity: 1;
+}
+
+#contact-form textarea.form-control {
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 21px;
+    line-height: 32px;
+    padding-top: 10px;
+}
+
+#contact-form .form-control:focus {
+    background: #fff;
+    border-bottom: 3px solid black;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: border-color .3s ease-in;
+    transition: border-color .3s ease-in;
+}
+
+#contact-form .error-message {
+    padding: 5px 0;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ff0000;
+    z-index: 10;
+}
+
+#contact-form .error-message:before {
+    content: "\00d7";
+    font-size: 21px;
+    line-height: 21px;
+    margin-right: 5px;
+}
+
+/*----------------------
+----- Footer Styles ----
+------------------------*/
+
+#main-footer {
+    background: rgb(237, 183, 83);
+}
+
+#main-footer p a {
+    padding-bottom: 40px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#main-footer p {
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 0 transparent;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.social-links li a {
+    display: block;
+    color: #fff;
+    font-size: 21px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: orange;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.social-links li a:hover {
+    color: #fff;
+    background: orange;
+}
+
+/* Book an appointment styling end */
+
+
+/* cards css start */
+.cardl {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border: 2px solid rgb(221, 158, 112);
+}
+
+.cardl img {
+    max-width: 75px;
+    border-radius: 100%;
+}
+
+.card__content {
+    display: flex;
+    gap: 1rem;
+}
+
+.card__content span i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card__details p {
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.card__details h4 {
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (width < 1200px) {
+    .container {
+        gap: 3rem;
+    }
+}
+
+@media (width < 900px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container__right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 750px) {
+    .container__right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* cards css end */
+
+/* reviews color title*/
+.orange {
+    color: rgb(211, 147, 29);
+    font-style: italic;
+}
+
+body.products {
+    background-image: url(newproductspg.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Optional: keeps the background fixed while scrolling */
+}
