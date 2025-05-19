@@ -338,3 +338,53 @@ body.products {
     box-shadow: 0 0 8px var(--cloud-bg);
     z-index: 1;
 }
+
+/* short bio section home page css start */
+/* Updated Split Section */
+.split {
+    width: 50%;
+    float: left;
+    height: auto;
+    padding: 150px;
+    box-sizing: border-box;
+    position: relative;
+    /* No longer fixed */
+    z-index: 0;
+    /* Keep it behind nav if needed */
+}
+
+/* Control the left side */
+.left {
+    background-color: rgba(236, 145, 183, 0.363);
+    color: black;
+}
+
+/* Control the right side */
+.right {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    flex-direction: column;
+
+}
+
+/* Container to wrap both splits */
+.split-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    clear: both;
+}
+
+.rounded-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* short bio section home page css end */
