@@ -9,6 +9,17 @@ body {
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Blanks Script';
+    src: url('/fonts/blanks-script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'Blanks Script', cursive;
+}
+
 img {
     max-width: 100%;
     height: auto;
