@@ -13,364 +13,82 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+IS:wght@100..400&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
 <body>
-    <!--navbar section start-->
-    <div class="navBar" id="nv">
-        <nav>
-            <i class="bi bi-justify" onclick="alert('heelo')" id="hamMenu"></i>
-            <ul>
-                <li><a href="#home">SAANVI JASWAL</a></li>
-                <li><a href="#web-projects">Web Design Projects</a></li>
-                <li><a href="#personal-projects">Personal Projects</a></li>
-                <li><a href="#athletics">Athletics</a></li>
-                <li><a href="#vision">My Vision</a></li>
+
+    <body>
+        <nav class="container">
+            <input id="nav-toggle" type="checkbox" />
+            <div class="logo">SAANVI <strong>JASWAL</strong></div>
+            <ul class="links">
+                <li class="list">
+                    <a href="wdproject.html">PORTFOLIO</a>
+                    <div class="home_underline"></div>
+                </li>
+                <li class="list">
+                    <a href="vision.html">VISION</a>
+                    <div class="home_underline"></div>
+                </li>
+                <li class="list">
+                    <a href="personal.html">PERSONAL</a>
+                    <div class="home_underline"></div>
+                </li>
+                <button>Contact</button>
             </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </nav>
-    </div>
-    <!--navbar section end -->
 
-
-
-    <!-- hero sectiooonnnnn-->
-    <div style="height: 100vh; background-image: url(rhp.webp); background-size: cover; background-position: center;"
-        class="position-relative w-100">
-        <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
-            style="top: 0; right: 0; bottom: 0; left: 0;">
-            <div class="container text-center">
-                <h1 class="custom-font">Saanvi Jaswal</h1>
-                <div class="cloud" style="bottom: 30px; left: 10px;"> </div>
-                <div class="cloud" style="bottom: 150px; left: 250px;"> </div>
-                <div class="cloud" style="bottom: 950px; top: 200px; left: 1500px;"></div>
-                <div class="cloud" style="bottom: 1000px; top: 100px; left: 1300px;"></div>
-
-            </div>
+        <div class="welcome-container">
+            <h1>WELCOME TO </h1>
+            <h3>Saanvi's Bubble</h3>
         </div>
-    </div>
-    </div>
-    </div>
-    <!--hero section enddddd -->
 
-
-    <!-- short bio section start-->
-    <div id=" container">
-        <div class="row text-center">
-            <div class="split left">
-                <div class="centered">
-                    <div class="cloud" style="bottom: 30px; left: 50px;"> </div>
-                    <div class="cloud" style="bottom: 950px; top: 200px; left: 1500px;"></div>
-
-                    <img src="IMG_2405.jpg" alt="" class="rounded-img">
-
-
-                </div>
+        <section class="info-section"
+            style="display: flex; align-items: center; gap: 2rem; max-width: 900px; margin: 2rem auto; padding: 1rem;">
+            <div class="image-container" style="flex: 1;">
+                <img src="stevenslogo.png" alt="Placeholder Image" />
             </div>
-
-            <div class="split right">
-                <div class="centered">
-                    <h2>Nice to meet you, I'm Saanvi!</h2>
-                    <p>I'm an incoming freshman at Stevens Institute of Technology pursuing Computer Science. Passionate
-                        about technology and innovation, I thrive on solving complex problems and continuously expanding
-                        my skill set. I have a strong foundation in programming and have developed projects that
-                        showcase both creativity and technical depth. I'm particularly interested in software
-                        development, artificial intelligence, and the impact of tech on everyday life.</p>
-
-                    <p>Beyond coding, I'm a highly motivated and detail-oriented individual who enjoys working both
-                        independently and collaboratively. I bring strong communication skills, a curious mindset, and a
-                        commitment to lifelong learning. Whether it's debugging lines of code or brainstorming new
-                        project ideas, I approach challenges with resilience and a willingness to grow.</p>
+            <div class="text-container">
+                <h2>stop I: bubble up</h2>
+                <p>
+                    hi there! nice to meet you, my name is saanvi. i am an incoming freshman at stevens institute of
+                    technology studying computer science. i am a graduate of marlboro high school studying web design.
+                    over the past few years, i've developed a passion for creating clean, user-friendly websites and
+                    have honed my skills in html, css, and javascript through personal projects and coursework.
+                    outside of coding, i enjoy
+                    journaling, watching 2000s movies, baking, exploring cars, and going to the beach. my goal is to
+                    combine strong
+                    technical foundations with creative problem-solving to build a better life for the underprivileged.
 
 
-                </div>
+                </p>
             </div>
-        </div>
-    </div>
-    <!--short bio section end-->
-
-    <!-- timeline section start-->
-    <section>
-        <div class="container py-5">
-            <div class="row">
-                <h3>My Work Throughout The Years</h3>
-
-                <div class="col-md-12">
-                    <div class="main-timeline">
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox">
-                                        <img src="https://picsum.photos/164" class="img">
-                                    </span></div>
-                                <div class="content">
-                                    <span class="year">Joined Scouting of America</span>
-                                    <h3 class="title h4">September 2019</h3>
-                                    <p class="description">
-                                        Tristique senectus et netus et malesuada fames. Sit amet consectetur adipiscing
-                                        elit pellentesque. Felis imperdiet proin fermentum leo vel orci porta non
-                                        pulvinar.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img" /></span></div>
-                                <div class="content">
-                                    <span class="year">Co-founded Excel to Propel</span>
-                                    <h3 class="title h4">Summer of 2020</h3>
-                                    <p class="description">
-                                        Tristique senectus et netus et malesuada fames. Sit amet consectetur adipiscing
-                                        elit pellentesque. Felis imperdiet proin fermentum leo vel orci porta non
-                                        pulvinar. Erat nam at lectus urna duis convallis. Eget aliquet nibh praesent
-                                        tristique magna. Interdum posuere lorem ipsum dolor sit amet. Elementum tempus
-                                        egestas sed sed risus pretium quam. Metus aliquam eleifend mi in nulla posuere
-                                        sollicitudin aliquam ultrices.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">Carnegie Hall</span>
-                                    <h3 class="title h4">July 2021</h3>
-                                    <p class="description">
-                                        Ornare aenean euismod elementum nisi quis eleifend. Libero id faucibus nisl
-                                        tincidunt eget nullam non. Suspendisse interdum consectetur libero id faucibus.
-                                        Adipiscing enim eu turpis egestas pretium. Dignissim convallis aenean et tortor.
-                                        Dui accumsan sit amet nulla. Duis convallis convallis tellus id interdum.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">Served as Associate Chapter Director</span>
-                                    <h3 class="title h4">April 2022</h3>
-                                    <p class="description">
-                                        Sed blandit libero volutpat sed cras. Adipiscing elit pellentesque habitant
-                                        morbi tristique senectus et netus et. Aliquam ultrices sagittis orci a. Ipsum
-                                        nunc aliquet bibendum enim facilisis. Magna ac placerat vestibulum lectus mauris
-                                        ultrices eros. Proin sagittis nisl rhoncus mattis rhoncus. Velit aliquet
-                                        sagittis id consectetur purus ut faucibus pulvinar elementum. Et ultrices neque
-                                        ornare aenean euismod elementum nisi. Ultricies mi quis hendrerit dolor magna
-                                        eget est lorem.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">SOMETHING</span>
-                                    <h3 class="title 4">Heading</h3>
-                                    <p class="description">
-                                        Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Tellus mauris a
-                                        diam maecenas sed enim ut. Congue mauris rhoncus aenean vel elit scelerisque
-                                        mauris pellentesque. Sed sed risus pretium quam vulputate dignissim suspendisse
-                                        in est.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">No.6</span>
-                                    <h3 class="title h4">Heading</h3>
-                                    <p class="description">
-                                        Eu feugiat pretium nibh ipsum consequat. Et molestie ac feugiat sed lectus
-                                        vestibulum mattis. Sit amet consectetur adipiscing elit duis tristique.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">No.7</span>
-                                    <h3 class="title h4">Heading</h3>
-                                    <p class="description">
-                                        Egestas fringilla phasellus faucibus scelerisque eleifend donec. Vitae justo
-                                        eget magna fermentum iaculis. Euismod lacinia at quis risus sed vulputate.
-                                        Congue nisi vitae suscipit tellus mauris a diam.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">No.8</span>
-                                    <h3 class="title h4">Heading</h3>
-                                    <p class="description">
-                                        Eget nunc scelerisque viverra mauris in aliquam. Nibh tortor id aliquet lectus.
-                                    </p>
-                                    <p class="description">
-                                        Semper quis lectus nulla at volutpat diam. Scelerisque purus semper eget duis at
-                                        tellus at urna condimentum. Nisl suscipit adipiscing bibendum est.
-                                    </p>
-                                    <p class="description">
-                                        Nisi vitae suscipit tellus mauris. Dignissim diam quis enim lobortis scelerisque
-                                        fermentum dui faucibus. Placerat orci nulla pellentesque dignissim enim sit amet
-                                        venenatis urna.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">No.9</span>
-                                    <h3 class="title h4">Heading</h3>
-                                    <p class="description">
-                                        Sit amet consectetur adipiscing elit ut. Dolor morbi non arcu risus quis varius
-                                        quam quisque. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat
-                                        orci. </p>
-                                    <p class="description">
-                                        Elementum sagittis vitae et leo. Risus pretium quam vulputate dignissim
-                                        suspendisse in est ante in.
-                                    </p>
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <div class="circle"><span class="homebox"><img src="https://picsum.photos/164"
-                                            class="img"></span></div>
-                                <div class="content">
-                                    <span class="year">No.10</span>
-                                    <h3 class="title h4">Heading</h3>
-
-                                    <p class="description">
-                                        Tellus in hac habitasse platea. Commodo nulla facilisi nullam vehicula ipsum a.
-                                        Quis commodo odio aenean sed adipiscing. Ipsum consequat nisl vel pretium
-                                        lectus. Dolor morbi non arcu risus quis varius. Mi bibendum neque egestas congue
-                                        quisque egestas diam in.</p>
-                                    <p class="description">
-                                        Id eu nisl nunc mi ipsum faucibus vitae aliquet. Placerat orci nulla
-                                        pellentesque dignissim enim.</p>
-
-                                    <div class="icon"><span></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- timeline section end-->
-
-
-    <!-- Bio Section -->
-    <div id="web-projects" class="container">
-        <h2>WEB PROJECTS </h2>
-    </div>
-
-    <!-- Timeline Section -->
-    <section id="personal-projects">
-        <h2>PERSONAL PROJECTS</h2>
-
-    </section>
-
-    <!-- Athletics Section -->
-    <section id="athletics">
-        <h2>Athletics Section Here</h2>
-        <h2>ATHLETICS </h2>
-
-    </section>
-
-    <!-- Vision Section -->
-    <section id="vision">
-        <h2>My Vision</h2>
-
-    </section>
+        </section>
 
 
 
-    <!--social media section start -->
-    <div class="section footer">
-        <div class="container">
-            <div class="flexbox-space-between gap-75 wrap footer">
-                <div class="footer-menu-wrapper_1">
-                    <p class="footer-title">Address</p>
-                    <p>43 Main St, Toms River, NJ, 08753</p>
-                    <div class="footer-menu"></div>
-                </div>
 
-                <div class="footer-menu-wrapper_2">
-                    <p class="footer-title">Phone</p>
-                    <p>(732) 555-1234 (Area code updated to NJ)</p>
-                    <div class="footer-menu"></div>
-                </div>
-                <div class="footer-menu-wrapper_3">
-                    <p class="footer-title">Store Hours</p>
-                    <p> Weekdays: 7:00 AM to 4:30 PM</p>
-                    <p>Saturday: 10:00 AM to 2:00 PM</p>
-                    <div class="footer-menu"></div>
-                </div>
-                <div class="footer-menu-wrapper_4">
-                    <p class="footer-title">Social Media</p>
-                    <div class="footer-menu">
-                        <a href="" class="footer-link">Instagram</a>
-                        <a href="" class="footer-link">Facebook</a>
-                        <a href="" class="footer-link">Twitter</a>
-                        <a href="" class="footer-link">Snapchat</a>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
 
-                    </div>
-                </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
 
-            </div>
-        </div>
-    </div>
-    </div>
-    <!--social media section end-->
-
-
-    <!--footer section start -->
-
-    <!--footer section end -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>
