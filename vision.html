@@ -13,37 +13,142 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+IS:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
 <body>
-    <!--navbar section start-->
-    <div class="navBar" id="nv">
-        <nav>
-            <i class="bi bi-justify" onclick="alert('heelo')" id="hamMenu"></i>
-            <ul>
-                <!-- main nav section -->
-                <li><a href='?page=home'>*Logo*</a></li>
-                <li><a href='wdproject.html'>Web Design Projects</a></li>
-                <li><a href='personal.html'>Personal Projects</a></li>
-                <li><a href='athletics.html'>Athletics</a></li>
-                <li><a href='vision.html'>My Vision</a></li>
 
+    <body>
+        <nav class="container">
+            <input id="nav-toggle" type="checkbox" />
+            <div class="logo">SAANVI <strong>JASWAL</strong></div>
+            <ul class="links">
+                <li class="list">
+                    <a href="wdproject.html">PORTFOLIO</a>
+                    <div class="home_underline"></div>
+                </li>
+                <li class="list">
+                    <a href="vision.html">VISION</a>
+                    <div class="home_underline"></div>
+                </li>
+                <li class="list">
+                    <a href="personal.html">PERSONAL</a>
+                    <div class="home_underline"></div>
+                </li>
+                <a href="mailto:sjasdocs@gmail.com">
+                    <button>Contact</button>
+                </a>
             </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </nav>
-    </div>
-    <!--navbar section end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        <div class="welcome-container">
+            <h1>WELCOME TO </h1>
+            <h3>My Vision</h3>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        <section class="info-section"
+            style="display: flex; align-items: center; gap: 2rem; max-width: 900px; margin: 2rem auto; padding: 1rem;">
+            <div class="image-container" style="flex: 1;">
+                <img src="aiimg.png" alt="Placeholder Image" />
+            </div>
+            <div class="text-container">
+                <h2>developing bubbles :)</h2>
+                <p>
+                    my long-term vision is to harness the power of artificial intelligence and innovative slum mapping
+                    techniques to create meaningful pathways between dedicated educators and underserved students in
+                    marginalized communities. by identifying educational gaps and connecting resources to those in need,
+                    i hope to help transform individual lives and uplift entire communities. my ambition extends beyond
+                    education — i aspire to become a ceo who leads with purpose, building organizations that drive
+                    impact across multiple industries. through a commitment to equity, innovation, and social
+                    responsibility, i aim to leave a lasting legacy that empowers future generations.
 
-    <script src="script.js"></script>
-</body>
+                </p>
+            </div>
+        </section>
+        <!-- cards section start -->
+
+        <div class="cards-wrapper">
+            <h2 class="away">stop II: bubble away</h2>
+            <p class="clock">Card description here.</p>
+
+            <div class="cards-row">
+                <div class="cta">
+                    <img src="image1.jpg" alt="Card 1">
+                    <div class="cta__text-column">
+                        <h2 class="look">Portfolio Projects</h2>
+                        <p class="check">my portfolio includes responsive web design projects that highlight clean
+                            layouts, strong visual design, and user-focused functionality. beyond classwork, i’ve taken
+                            on independent projects: from ai to journalism.
+
+                        </p>
+                        <a href="wdproject.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <img src="image2.jpg" alt="Card 2">
+                    <div class="cta__text-column">
+                        <h2 class="look">My Vision</h2>
+                        <p class="check">my vision is to leverage artificial intelligence to support and empower
+                            underrepresented children by providing accessible educational resources and innovative
+                            tools. through ai, i strive to create opportunities that foster learning, creativity, and
+                            equal access to technology, helping bridge the digital divide and inspire future success.
+                        </p>
+
+                        <a href="vision.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <img src="image2.jpg" alt="Card 2">
+                    <div class="cta__text-column">
+                        <h2 class="look">Personal</h2>
+                        <p class="check">i am passionate about journalism, the arts, and actively engaging with my
+                            cultural roots, seeking to explore and express diverse perspectives while fostering
+                            meaningful connections through storytelling and creativity.
+                        </p>
+
+                        <a href="personal.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <img src="image2.jpg" alt="Card 2">
+                    <div class="cta__text-column">
+                        <h2 class="look">Contact Me</h2>
+                        <p class="check">i welcome connections and collaborations through email and linkedin, and am
+                            open to exploring opportunities to work with others on meaningful projects.
+
+                        </p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--cards section end-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+    </body>
 
 </html>

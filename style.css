@@ -56,7 +56,6 @@ h3 {
     left: 0;
     right: 0;
     display: flex;
-    padding: 0 160px;
     /* LEFT/RIGHT padding only */
     justify-content: space-between;
     align-items: center;
@@ -65,6 +64,9 @@ h3 {
     background-color: rgb(239, 201, 201);
     /* Match nav background */
     z-index: 1001;
+
+    /* full-width */
+    width: 100%;
 }
 
 
@@ -93,8 +95,9 @@ nav {
 }
 
 nav .logo {
-    font-size: 1.8rem;
-    z-index: 9;
+    font-size: 1.5rem;
+    z-index: 6;
+    color: black;
 }
 
 nav .links {
@@ -339,3 +342,143 @@ nav .icon-burger .line {
 }
 
 /* info section css end */
+
+/* cards section css start*/
+* {
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 50em) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+.cards-wrapper {
+    background-color: #380303;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows wrapping on smaller screens */
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.cards-wrapper .away {
+    color: white;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 3rem;
+    /* space underneath the heading */
+    padding-top: 2rem;
+    /* optional space above the heading */
+}
+
+
+.cta {
+    --shadowColor: 187 60% 40%;
+    display: flex;
+    flex-direction: column;
+    /* stack image + text */
+    background: hsl(0, 38%, 80%);
+    width: 300px;
+    /* fixed width for uniform cards */
+    box-shadow: 0.65rem 0.65rem 0 hsl(0, 42%, 46%);
+    /* updated */
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 0.5rem solid;
+}
+
+.cta img {
+    width: 100%;
+    /* full width of card */
+    height: 180px;
+    object-fit: cover;
+    outline: 0.5rem solid;
+}
+
+.cta__text-column {
+    padding: 1rem;
+}
+
+.cta__text-column>*+* {
+    margin-top: 1rem;
+}
+
+.cta a {
+    display: inline-block;
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background: hsl(0, 42%, 46%);
+    border-radius: 0.6rem;
+    font-weight: 700;
+    border: 0.35rem solid;
+}
+
+.cards-wrapper .away h2 {
+    font-weight: 700;
+    /* bold */
+    font-size: 3rem;
+    color: white;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: 1.5px;
+    padding: 0;
+    margin-bottom: 1rem;
+    /* was 3rem */
+
+
+
+}
+
+.cards-wrapper h2.look {
+    font-weight: 700;
+    /* bold */
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: 1.5px;
+
+
+}
+
+.cards-wrapper p.check {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Montserrat Alternates", sans-serif;
+
+}
+
+.cards-wrapper p.clock {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+/* cards section css end */
