@@ -6,6 +6,8 @@
 
 body {}
 
+
+
 .welcome-container {
     background-color: rgb(239, 201, 201);
     height: 80vh;
@@ -89,10 +91,24 @@ nav {
     color: black;
     background-color: rgb(239, 201, 201);
     position: fixed;
-    top: 0;
     z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
 
 }
+
+nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* fixed height of navbar */
+    padding: 0 20px;
+}
+
 
 nav .logo {
     font-size: 1.5rem;
@@ -472,13 +488,171 @@ nav .icon-burger .line {
     color: white;
     font-style: normal;
     padding: 0;
-    margin: 0;
     font-family: "Montserrat Alternates", sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -50px;
+
 
 }
 
-
-
 /* cards section css end */
+
+.cook {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Arrange items vertically */
+    justify-content: center;
+    /* Centers vertically */
+    align-items: center;
+    /* Centers horizontally */
+    font-family: "Cherry Bomb One", system-ui;
+    position: relative;
+    /* Still needed for absolute positioning of the main "my pie" text */
+}
+
+.pie {
+    margin: 5vmin auto;
+    border-radius: 50%;
+    width: 50vmin;
+    height: 50vmin;
+    overflow: hidden;
+    /* Removed padding: 50px; to ensure accurate centering of labels */
+    background: conic-gradient(#530303 0% 20%,
+            /* 1st slice */
+            #dda399 20% 40%,
+            /* 2nd slice */
+            #a53d3d 40% 60%,
+            /* 3rd slice */
+            #310202 60% 80%,
+            /* 4th slice */
+            #da6464 80% 100%
+            /* 5th slice */
+        );
+    z-index: 1;
+    position: relative;
+    /* Essential for positioning the inner slice labels */
+}
+
+.cook h2.look {
+    font-weight: 700;
+    font-size: 3rem;
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+    margin-bottom: 2vmin;
+    /* Add some space between the text and the pie */
+    z-index: 10;
+    width: 100%;
+    max-width: 50vmin;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+/* Styles for the individual pie section labels */
+.pie>div {
+    /* Target direct children divs of .pie */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* Center the label itself */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    /* Default text color for labels */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent background for readability */
+    padding: 0.8vmin 1.5vmin;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    z-index: 5;
+    /* Ensure labels are on top of the pie */
+    font-family: "Cherry Bomb One", system-ui;
+    /* Apply the same font */
+}
+
+/* Positioning for each specific slice label - calculated for precise centering */
+/* Each slice is 72 degrees (360 / 5) */
+/* Labels are placed at ~65% of the pie's radius (0.65 * 25vmin = 16.25vmin) from the center */
+
+/* Slice 1 (goofy): Midpoint angle = 36 degrees */
+.goofy {
+    top: calc(50% + 9.54vmin);
+    left: calc(50% + 13.15vmin);
+}
+
+/* Slice 2 (funny): Midpoint angle = 108 degrees */
+.funny {
+    top: calc(50% + 15.45vmin);
+    left: calc(50% - 5.02vmin);
+}
+
+/* Slice 3 (sleeping): Midpoint angle = 180 degrees */
+.sleeping {
+    top: calc(50% + 0vmin);
+    left: calc(50% - 16.25vmin);
+}
+
+/* Slice 4 (eating): Midpoint angle = 252 degrees */
+.eating {
+    top: calc(50% - 15.45vmin);
+    left: calc(50% - 5.02vmin);
+}
+
+/* Slice 5 (locked-in): Midpoint angle = 324 degrees */
+.locked-in {
+    /* Adjusted values for better visibility */
+    top: calc(50% - 15.45vmin);
+    left: calc(50% - 5.02vmin);
+}
+
+/* Optional: Adjust colors for better contrast if needed */
+.goofy {
+    background-color: rgba(83, 3, 3, 0.6);
+}
+
+/* Dark Red */
+.funny {
+    background-color: rgba(221, 163, 153, 0.6);
+    color: black;
+}
+
+/* Light Red */
+.sleeping {
+    background-color: rgba(165, 61, 61, 0.6);
+}
+
+/* Medium Red */
+.eating {
+    background-color: rgba(49, 2, 2, 0.6);
+}
+
+/* Very Dark Red */
+.locked-in {
+    background-color: rgba(255, 192, 203, 0.6);
+    color: black;
+}
+
+/* Changed to light pink for visibility */
+
+/* footer css start */
+footer {
+    margin-top: 80vh;
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5rem 2vw;
+    position: relative;
+    background-color: #380303;
+}
+
+
+/* footer css end */
