@@ -6,6 +6,12 @@
 
 body {}
 
+.main-container {
+    width: 100%;
+
+    /* This padding will keep content off the very edge */
+}
+
 
 
 .welcome-container {
@@ -53,22 +59,19 @@ h3 {
 
 
 .container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    max-width: 1200px;
+    /* Limits the content width */
+    margin: 0 auto;
+    /* Centers the content within its parent */
     display: flex;
-    /* LEFT/RIGHT padding only */
+    /* Enables flexbox for content alignment */
     justify-content: space-between;
+    /* Distributes items (e.g., logo on left, nav links on right) */
     align-items: center;
+    /* Vertically centers items */
     height: 100px;
-    /* Give it a fixed height */
-    background-color: rgb(239, 201, 201);
-    /* Match nav background */
-    z-index: 1001;
-
-    /* full-width */
-    width: 100%;
+    /* Sets a fixed height for this container */
+    padding: 0 20px;
 }
 
 
@@ -100,12 +103,17 @@ nav {
 
 nav .container {
     max-width: 1200px;
+    /* Limits the content width */
     margin: 0 auto;
+    /* Centers the content within the nav */
     display: flex;
+    /* Enables flexbox for content alignment */
     justify-content: space-between;
+    /* Distributes items (e.g., logo on left, nav links on right) */
     align-items: center;
+    /* Vertically centers items */
     height: 100px;
-    /* fixed height of navbar */
+    /* Sets a fixed height for the container within the nav */
     padding: 0 20px;
 }
 
@@ -586,8 +594,8 @@ nav .icon-burger .line {
 
 .locked-in {
     /* Adjusted values for better visibility */
-    top: calc(50% - 15.45vmin);
-    left: calc(50% - 5.02vmin);
+    top: calc(50% + 9.54vmin);
+    left: calc(50% + 13.15vmin);
 }
 
 /* Slice 2 (funny): Midpoint angle = 108 degrees */
