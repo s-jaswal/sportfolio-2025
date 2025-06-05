@@ -59,7 +59,7 @@ h3 {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1900px;
     /* Limits the content width */
     margin: 0 auto;
     /* Centers the content within its parent */
@@ -75,53 +75,44 @@ h3 {
 }
 
 
-@media screen and (max-width: 1024px) {
-    .container {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        display: flex;
-        margin: 30px 80px 30px 80px;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
 
+/* General styles for nav */
 nav {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: black;
     background-color: rgb(239, 201, 201);
     position: fixed;
+    /* Makes it stay at the top */
     z-index: 1000;
     width: 100%;
+    /* Ensures it's full width */
     top: 0;
     left: 0;
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Adds a subtle shadow for depth */
 }
 
+/* Styles for the inner container within the nav */
 nav .container {
     max-width: 1200px;
-    /* Limits the content width */
+    /* Limits content width on large screens */
     margin: 0 auto;
-    /* Centers the content within the nav */
+    /* Centers content on large screens */
     display: flex;
-    /* Enables flexbox for content alignment */
     justify-content: space-between;
-    /* Distributes items (e.g., logo on left, nav links on right) */
     align-items: center;
-    /* Vertically centers items */
     height: 100px;
-    /* Sets a fixed height for the container within the nav */
+    /* Fixed height for the navbar content */
     padding: 0 20px;
+    /* Provides default horizontal padding */
 }
-
 
 nav .logo {
     font-size: 1.5rem;
     z-index: 6;
     color: black;
+    font-weight: bold;
 }
 
 nav .links {
@@ -168,6 +159,13 @@ button {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Smooth button hover */
+}
+
+button:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
 }
 
 button::before {
@@ -216,13 +214,28 @@ nav .icon-burger .line {
     border-radius: 5px;
 }
 
+/* Media query for screens 1024px and smaller */
+@media screen and (max-width: 1024px) {
+    nav .container {
+        /* The margin property is removed here to allow the padding to control spacing */
+        margin: 0 auto;
+        /* Re-apply auto margin to ensure centering if max-width is used,
+                           or simply rely on padding if the width is implicitly 100% */
+        padding: 0 20px;
+        /* You can adjust this padding for smaller screens if needed */
+    }
+}
+
+/* Media query for screens 768px and smaller (mobile view adjustments) */
 @media screen and (max-width: 768px) {
     nav .logo {
         z-index: 99;
     }
 
-    .container {
-        margin: 30px 10px 30px 30px;
+    nav .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        /* Example: slightly less padding on very small screens */
     }
 
     nav .links {
@@ -249,21 +262,12 @@ nav .icon-burger .line {
     }
 
     button {
-        border: none;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5rem;
-        color: white;
-        background-color: blueviolet;
-        border-radius: 100px;
-        padding: 10px 40px 10px 40px;
+        padding: 10px 40px;
     }
 
     nav .links a {
-        font-family: Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
         font-size: 3rem;
-        color: white;
-        font-weight: 600;
     }
 
     nav .icon-burger {
@@ -274,10 +278,6 @@ nav .icon-burger .line {
 
     nav :checked~.links {
         left: 0;
-    }
-
-    nav .icon-burger .line {
-        transition: 0.3s cubic-bezier(0.97, 0.02, 0.44, 0.99);
     }
 
     nav :checked~.icon-burger .line:nth-child(1) {
