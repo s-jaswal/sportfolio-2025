@@ -1268,6 +1268,7 @@ pre {
 /* Composition */
 .team {
     --flow-space: 2em;
+    text-align: center;
 }
 
 /* Blocks */
