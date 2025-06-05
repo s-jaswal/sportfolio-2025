@@ -145,6 +145,8 @@ nav li {
 
 .list:hover>.home_underline {
     transform: translatex(0px);
+    opacity: 1;
+    /* ADD THIS: Make it fully visible on hover */
 }
 
 button {
@@ -258,7 +260,14 @@ nav .icon-burger .line {
     }
 
     .home_underline {
+        transform: translateX(-70px);
+        width: auto;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s cubic-bezier(0.97, 0.02, 0.44, 0.99);
+        opacity: 0;
         display: none;
+        /* ADD THIS: Make it completely invisible by default */
     }
 
     button {
@@ -1135,6 +1144,41 @@ p {
 .window:focus-within {
     filter: saturate(1);
 }
+
+.take h1.give {
+    /* Notice the square brackets for attribute selection */
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #310303;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.hate h1.love {
+    /* Notice the square brackets for attribute selection */
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #310303;
+    text-align: center;
+    font-size: 20px;
+}
+
+.down p.up {
+    /* Notice the square brackets for attribute selection */
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #310303;
+    text-align: center;
+    font-size: 14px;
+}
+
+.down ul.up {
+    /* Notice the square brackets for attribute selection */
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #310303;
+    text-align: center;
+    font-size: 14px;
+}
+
+
 
 .window__title-bar {
     background-color: #cc4f4f;
