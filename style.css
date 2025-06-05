@@ -584,6 +584,12 @@ nav .icon-burger .line {
     left: calc(50% + 13.15vmin);
 }
 
+.locked-in {
+    /* Adjusted values for better visibility */
+    top: calc(50% - 15.45vmin);
+    left: calc(50% - 5.02vmin);
+}
+
 /* Slice 2 (funny): Midpoint angle = 108 degrees */
 .funny {
     top: calc(50% + 15.45vmin);
@@ -603,11 +609,7 @@ nav .icon-burger .line {
 }
 
 /* Slice 5 (locked-in): Midpoint angle = 324 degrees */
-.locked-in {
-    /* Adjusted values for better visibility */
-    top: calc(50% - 15.45vmin);
-    left: calc(50% - 5.02vmin);
-}
+
 
 /* Optional: Adjust colors for better contrast if needed */
 .goofy {
