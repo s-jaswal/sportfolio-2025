@@ -1097,6 +1097,7 @@ p {
     /* Aligns cards to the top, useful if cards have different heights */
     padding: 20px;
     /* Add some padding around the whole collection of cards */
+    background-color: #f1cbcb;
 }
 
 
@@ -1221,13 +1222,21 @@ pre {
 
 ::selection {
     color: white;
-    background: hotpink;
+    background: rgb(224, 159, 159);
 }
 
-.bag h2.books {
+.bag h2[span="books"] {
+    /* Notice the square brackets for attribute selection */
     font-family: "Cherry Bomb One", system-ui;
-    color: #2a0101;
+    color: #310303;
     text-align: center;
+    font-size: 60px;
+    background-color: #f1cbcb;
+
+}
+
+.spoon p[span="learn"] {
+    font-family: "Montserrat Alternates", sans-serif;
 
 }
 
