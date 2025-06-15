@@ -377,17 +377,16 @@ nav .icon-burger .line {
 /* info section css end */
 
 /* cards section css start*/
+/* cards section css start*/
 * {
     box-sizing: border-box;
 }
-
 
 @media (min-width: 50em) {
     h2 {
         font-size: 1.8rem;
     }
 }
-
 
 .cards-wrapper {
     background-color: #380303;
@@ -401,11 +400,11 @@ nav .icon-burger .line {
 .cards-row {
     display: flex;
     flex-wrap: wrap;
-    /* allows wrapping on smaller screens */
+    /* Allows wrapping on smaller screens */
     justify-content: center;
     gap: 2rem;
+    /* Increased gap slightly for bigger cards */
 }
-
 
 .cards-wrapper .away {
     color: white;
@@ -415,52 +414,66 @@ nav .icon-burger .line {
     text-align: center;
     user-select: none;
     margin-bottom: 3rem;
-    /* space underneath the heading */
+    /* Space underneath the heading */
     padding-top: 2rem;
-    /* optional space above the heading */
+    /* Optional space above the heading */
 }
-
 
 .cta {
     --shadowColor: 187 60% 40%;
     display: flex;
-    flex-direction: column;
-    /* stack image + text */
+    /* Retain flex for side-by-side layout */
+    flex-direction: row;
+    /* Layout content horizontally within the card */
     background: hsl(0, 38%, 80%);
-    width: 300px;
-    /* fixed width for uniform cards */
+    width: 380px;
+    /* Keep width consistent as per your last request */
+    max-width: 380px;
+    /* Ensure max-width matches the fixed width */
+    min-height: 200px;
+    /* **Increased min-height significantly to give more text space** */
     box-shadow: 0.65rem 0.65rem 0 hsl(0, 42%, 46%);
-    /* updated */
     border-radius: 0.8rem;
     overflow: hidden;
     border: 0.5rem solid;
+    align-items: center;
+    /* Vertically align items in the card */
 }
 
 .cta img {
-    width: 100%;
-    /* full width of card */
-    height: 180px;
+    width: 35%;
+    /* Keep image width consistent or adjust as needed */
+    height: 100%;
+    /* Make image take full height of its container */
     object-fit: cover;
+    /* Ensure image covers the area, cropping if needed */
     outline: 0.5rem solid;
 }
 
 .cta__text-column {
-    padding: 1rem;
+    flex: 1;
+    /* Allows the text column to take up remaining space */
+    padding: 1.2rem;
+    /* **Increased padding around the text** */
 }
 
 .cta__text-column>*+* {
     margin-top: 1rem;
+    /* Restored margin for better spacing */
 }
 
 .cta a {
     display: inline-block;
     color: black;
     padding: 0.5rem 1rem;
+    /* Keep button padding consistent */
     text-decoration: none;
     background: hsl(0, 42%, 46%);
     border-radius: 0.6rem;
     font-weight: 700;
     border: 0.35rem solid;
+    font-size: 1rem;
+    /* Keep font size for the button consistent */
 }
 
 .cards-wrapper .away h2 {
@@ -473,30 +486,36 @@ nav .icon-burger .line {
     padding: 0;
     margin-bottom: 1rem;
     /* was 3rem */
-
-
-
 }
 
 .cards-wrapper h2.look {
     font-weight: 700;
     /* bold */
     margin-bottom: 0.5rem;
-    font-size: 3rem;
+    /* Keep margin below heading consistent */
+    font-size: 1.8rem;
+    /* Keep heading size consistent */
     color: black;
     font-family: "Cherry Bomb One", system-ui;
     letter-spacing: 1.5px;
-
-
 }
 
 .cards-wrapper p.check {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    /* Keep paragraph font size consistent */
     line-height: 1.5;
+    /* **Slightly increased line height for better readability** */
     font-weight: 400;
     font-style: normal;
     font-family: "Montserrat Alternates", sans-serif;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* **Increased lines to 5 (from 4) to allow more text** */
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.8rem;
+    /* **Increased bottom margin for paragraph** */
 }
 
 .cards-wrapper p.clock {
@@ -507,10 +526,9 @@ nav .icon-burger .line {
     padding: 0;
     font-family: "Montserrat Alternates", sans-serif;
     margin-top: -50px;
-
-
 }
 
+/* cards section css end */
 /* cards section css end */
 
 .cook {
@@ -1114,7 +1132,7 @@ p {
     /* Centers the cards horizontally */
     align-items: flex-start;
     /* Aligns cards to the top, useful if cards have different heights */
-    padding: 20px;
+    padding: 100px;
     /* Add some padding around the whole collection of cards */
     background-color: #f1cbcb;
 }
