@@ -1142,16 +1142,16 @@ p {
     /* Keep this for the internal layout of each card */
     display: flex;
     flex-direction: column;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 350px;
     border: 5px solid #2a0101;
-    box-shadow: 15px 15px 0 #c38b8b;
-    max-width: 600px;
-    max-height: 500px;
-    background-color: #882020;
+    box-shadow: 15px 15px 0 #5b0202;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #d96c6c;
     filter: saturate(.1);
     border-radius: 3px;
-    padding: 50px;
+    padding: 30px;
     /* Remove the margin-bottom, margin-top, and margin-left from here,
        as the `gap` on the container will handle spacing between cards. */
     /* margin-bottom: 100px; */
